@@ -1,16 +1,15 @@
 Working of Application :-
 
-In database each entry has three attributes viz. Title of book, Age group and Gender, therefore the application ask for user age and gender,
-so that age and gender are the two vectors on the diffrence of which book is suggested to the user.
+In a database, each entry contains three attributes: the title of the book, age group, and gender. Therefore, the application requests the user's age and gender to generate two vectors, which are used to suggest books to the user based on the differences between the vectors.
 
-Algorithm:-
+Algorithm:
 
-x1=user's age,   x2=Book's age group(from db)
-y1=user'gender,  y2=Book's gender group(from db)
+Let x1 be the user's age and x2 be the book's age group (from the database).
+Let y1 be the user's gender and y2 be the book's gender group (from the database).
 
-diffrence of vectors = ((x1-x2)^2 + (y1-y1)^2)^1/2
+The difference between the vectors is calculated as follows: ((x1 - x2)^2 + (y1 - y2)^2)^1/2
 
-So the book with the minimum diffrence will be suggested to the user.
+The book with the minimum difference will be suggested to the user
 
 Tech Stack :- HTML, CSS, React JS, Node JS, Mongo DB
 
